@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: demo
+    database: demo
+    schema: demo_schema
+    config:
+      enabled: true
+    tables:
+      - name: bike  # enabled
+      - name: weather
+      # - name: ignore_this_one  # not enabled
+      #   config:
+      #     enabled: false
