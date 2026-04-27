@@ -8,7 +8,7 @@ WITH CTE AS (
 
     {{ getStationOfYear("STARTED_AT") }} AS STATION_OF_YEAR
 
-    from {{ source('demo', 'bike') }}
+    from {{ ref('stage_bike') }}
     where STARTED_AT != 'started_at' 
     and STARTED_AT != '"started_at"'
 )
